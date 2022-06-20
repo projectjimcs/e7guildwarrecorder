@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace E7GuildWarRecorder.Pages.Record
+namespace E7GuildWarRecorder.Pages.Matches
 {
-	public class RecordModel : PageModel
+	public class IndexModel : PageModel
     {
         public void OnGet()
         {
