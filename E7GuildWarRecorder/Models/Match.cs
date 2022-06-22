@@ -30,21 +30,27 @@ public class Match
     public DateTime? UpdatedAt { get; set; }
 
     [ForeignKey("Offense1Id")]
-    public virtual Hero Offense1 { get; set; }
+    [InverseProperty("Offense1Matches")]
+    public virtual Hero? Offense1 { get; set; }
 
     [ForeignKey("Offense2Id")]
-    public virtual Hero Offense2 { get; set; }
+    [InverseProperty("Offense2Matches")]
+    public virtual Hero? Offense2 { get; set; }
 
     [ForeignKey("Offense3Id")]
-    public virtual Hero Offense3 { get; set; }
+    [InverseProperty("Offense3Matches")]
+    public virtual Hero? Offense3 { get; set; }
 
     [ForeignKey("Defense1Id")]
-    public virtual Hero Defense1 { get; set; }
+    [InverseProperty("Defense1Matches")]
+    public virtual Hero? Defense1 { get; set; }
 
     [ForeignKey("Defense2Id")]
-    public virtual Hero Defense2 { get; set; }
+    [InverseProperty("Defense2Matches")]
+    public virtual Hero? Defense2 { get; set; }
 
     [ForeignKey("Defense3Id")]
-    public virtual Hero Defense3 { get; set; }
+    [InverseProperty("Defense3Matches")]
+    public virtual Hero? Defense3 { get; set; }
 }
 
