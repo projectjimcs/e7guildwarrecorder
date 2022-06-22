@@ -39,7 +39,1801 @@ namespace E7GuildWarRecorder.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("hero");
+                    b.ToTable("hero", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Icon = "achates.png",
+                            Key = "achates",
+                            Name = "Achates"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Icon = "acidd.png",
+                            Key = "assassin-cidd",
+                            Name = "Assassin Cidd"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Icon = "acoli.png",
+                            Key = "assassin-coli",
+                            Name = "Assassin Coli"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Icon = "adin.png",
+                            Key = "adin",
+                            Name = "Adin"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Icon = "adlay.png",
+                            Key = "adlay",
+                            Name = "Adlay"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Icon = "ainos.png",
+                            Key = "ainos",
+                            Name = "Ainos"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Icon = "ains.png",
+                            Key = "ains",
+                            Name = "Ains"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Icon = "aither.png",
+                            Key = "aither",
+                            Name = "Aither"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Icon = "alenica.png",
+                            Key = "alencia",
+                            Name = "Alencia"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Icon = "alexa.png",
+                            Key = "alexa",
+                            Name = "Alexa"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Icon = "alots.png",
+                            Key = "auxiliary-lots",
+                            Name = "Auxiliary Lots"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Icon = "ameru.png",
+                            Key = "archdemon-mercedes",
+                            Name = "Archdemon Mercedes"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Icon = "amomo.png",
+                            Key = "angelic-montmorancy",
+                            Name = "Angelic Montmorancy"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Icon = "angelica.png",
+                            Key = "angelica",
+                            Name = "Angelica"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Icon = "aola.png",
+                            Key = "angel-of-light-angelica",
+                            Name = "Angel of Light Angelica"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Icon = "aramintha.png",
+                            Key = "aramintha",
+                            Name = "Aramintha"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Icon = "aras.png",
+                            Key = "adventurer-ras",
+                            Name = "Adventurer Ras"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Icon = "aravi.png",
+                            Key = "apocalypse-ravi",
+                            Name = "Apocalypse Ravi"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Icon = "arby.png",
+                            Key = "arbiter-vildred",
+                            Name = "Arbiter Vildred"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Icon = "aria.png",
+                            Key = "aria",
+                            Name = "Aria"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            Icon = "armin.png",
+                            Key = "armin",
+                            Name = "Armin"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            Icon = "arowell.png",
+                            Key = "arowell",
+                            Name = "Arowell"
+                        },
+                        new
+                        {
+                            Id = 23,
+                            Icon = "arwanda.png",
+                            Key = "all-rounder-wanda",
+                            Name = "All-Rounder Wanda"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            Icon = "asscart.png",
+                            Key = "assassin-cartuja",
+                            Name = "Assassin Cartuja"
+                        },
+                        new
+                        {
+                            Id = 25,
+                            Icon = "atywin.png",
+                            Key = "ambitious-tywin",
+                            Name = "Ambitious Tywin"
+                        },
+                        new
+                        {
+                            Id = 26,
+                            Icon = "axegod.png",
+                            Key = "chaos-sect-axe",
+                            Name = "Chaos Sect Axe"
+                        },
+                        new
+                        {
+                            Id = 27,
+                            Icon = "azalea.png",
+                            Key = "azalea",
+                            Name = "Azalea"
+                        },
+                        new
+                        {
+                            Id = 28,
+                            Icon = "baal.png",
+                            Key = "baal",
+                            Name = "Baal"
+                        },
+                        new
+                        {
+                            Id = 29,
+                            Icon = "badcat.png",
+                            Key = "bad-cat-armin",
+                            Name = "Bad Cat Armin"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            Icon = "baiken.png",
+                            Key = "baiken",
+                            Name = "Baiken"
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Icon = "basar.png",
+                            Key = "basar",
+                            Name = "Basar"
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Icon = "bask.png",
+                            Key = "bask",
+                            Name = "Bask"
+                        },
+                        new
+                        {
+                            Id = 33,
+                            Icon = "batisse.png",
+                            Key = "batisse",
+                            Name = "Batisse"
+                        },
+                        new
+                        {
+                            Id = 34,
+                            Icon = "bbk.png",
+                            Key = "blood-blade-karin",
+                            Name = "Blood Blade Karin"
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Icon = "bcorpsinquisitor.png",
+                            Key = "butcher-corps-inquisitor",
+                            Name = "Butcher Corps Inquisitor"
+                        },
+                        new
+                        {
+                            Id = 36,
+                            Icon = "belian.png",
+                            Key = "belian",
+                            Name = "Belian"
+                        },
+                        new
+                        {
+                            Id = 37,
+                            Icon = "bellona.png",
+                            Key = "bellona",
+                            Name = "Bellona"
+                        },
+                        new
+                        {
+                            Id = 38,
+                            Icon = "biseria.png",
+                            Key = "briar-witch-iseria",
+                            Name = "Briar Witch Iseria"
+                        },
+                        new
+                        {
+                            Id = 39,
+                            Icon = "bmh.png",
+                            Key = "blood-moon-haste",
+                            Name = "Blood Moon Haste"
+                        },
+                        new
+                        {
+                            Id = 40,
+                            Icon = "bromann.png",
+                            Key = "benevolent-romann",
+                            Name = "Benevolent Romann"
+                        },
+                        new
+                        {
+                            Id = 41,
+                            Icon = "camilla.png",
+                            Key = "camilla",
+                            Name = "Camilla"
+                        },
+                        new
+                        {
+                            Id = 42,
+                            Icon = "captainrikoris.png",
+                            Key = "captain-rikoris",
+                            Name = "Captain Rikoris"
+                        },
+                        new
+                        {
+                            Id = 43,
+                            Icon = "carmainerose.png",
+                            Key = "carmainerose",
+                            Name = "Carmainerose"
+                        },
+                        new
+                        {
+                            Id = 44,
+                            Icon = "carmin.png",
+                            Key = "crimson-armin",
+                            Name = "Crimson Armin"
+                        },
+                        new
+                        {
+                            Id = 45,
+                            Icon = "carrot.png",
+                            Key = "carrot",
+                            Name = "Carrot"
+                        },
+                        new
+                        {
+                            Id = 46,
+                            Icon = "cartuja.png",
+                            Key = "cartuja",
+                            Name = "Cartuja"
+                        },
+                        new
+                        {
+                            Id = 47,
+                            Icon = "ccharles.png",
+                            Key = "closer-charles",
+                            Name = "Closer Charles"
+                        },
+                        new
+                        {
+                            Id = 48,
+                            Icon = "cdom.png",
+                            Key = "challenger-dominiel",
+                            Name = "Challenger Dominiel"
+                        },
+                        new
+                        {
+                            Id = 49,
+                            Icon = "cecilia.png",
+                            Key = "cecilia",
+                            Name = "Cecilia"
+                        },
+                        new
+                        {
+                            Id = 50,
+                            Icon = "celeste.png",
+                            Key = "celeste",
+                            Name = "Celeste"
+                        },
+                        new
+                        {
+                            Id = 51,
+                            Icon = "celine.png",
+                            Key = "celine",
+                            Name = "Celine"
+                        },
+                        new
+                        {
+                            Id = 52,
+                            Icon = "cerise.png",
+                            Key = "cerise",
+                            Name = "Cerise"
+                        },
+                        new
+                        {
+                            Id = 53,
+                            Icon = "cermia.png",
+                            Key = "cermia",
+                            Name = "Cermia"
+                        },
+                        new
+                        {
+                            Id = 54,
+                            Icon = "chaosinquisitor.png",
+                            Key = "chaos-inquisitor",
+                            Name = "Chaos Inquisitor"
+                        },
+                        new
+                        {
+                            Id = 55,
+                            Icon = "charles.png",
+                            Key = "charles",
+                            Name = "Charles"
+                        },
+                        new
+                        {
+                            Id = 56,
+                            Icon = "charlotte.png",
+                            Key = "charlotte",
+                            Name = "Charlotte"
+                        },
+                        new
+                        {
+                            Id = 57,
+                            Icon = "chloe.png",
+                            Key = "chloe",
+                            Name = "Chloe"
+                        },
+                        new
+                        {
+                            Id = 58,
+                            Icon = "choux.png",
+                            Key = "choux",
+                            Name = "Choux"
+                        },
+                        new
+                        {
+                            Id = 59,
+                            Icon = "christy.png",
+                            Key = "christy",
+                            Name = "Christy"
+                        },
+                        new
+                        {
+                            Id = 60,
+                            Icon = "churchaxe.png",
+                            Key = "church-of-ilryos-axe",
+                            Name = "Church of Ilryos Axe"
+                        },
+                        new
+                        {
+                            Id = 61,
+                            Icon = "cidd.png",
+                            Key = "cidd",
+                            Name = "Cidd"
+                        },
+                        new
+                        {
+                            Id = 62,
+                            Icon = "clarissa.png",
+                            Key = "clarissa",
+                            Name = "Clarissa"
+                        },
+                        new
+                        {
+                            Id = 63,
+                            Icon = "clilias.png",
+                            Key = "conquerer-lilias",
+                            Name = "Conquerer Lilias"
+                        },
+                        new
+                        {
+                            Id = 64,
+                            Icon = "clorina.png",
+                            Key = "commander-lorina",
+                            Name = "Commander Lorina"
+                        },
+                        new
+                        {
+                            Id = 65,
+                            Icon = "cmeru.png",
+                            Key = "celestial-mercedes",
+                            Name = "Celestial Mercedes"
+                        },
+                        new
+                        {
+                            Id = 66,
+                            Icon = "cmrin.png",
+                            Key = "crescent-moon-rin",
+                            Name = "Crescent Moon Rin"
+                        },
+                        new
+                        {
+                            Id = 67,
+                            Icon = "coli.png",
+                            Key = "coli",
+                            Name = "Coli"
+                        },
+                        new
+                        {
+                            Id = 68,
+                            Icon = "corvus.png",
+                            Key = "corvus",
+                            Name = "Corvus"
+                        },
+                        new
+                        {
+                            Id = 69,
+                            Icon = "crozet.png",
+                            Key = "crozet",
+                            Name = "Crozet"
+                        },
+                        new
+                        {
+                            Id = 70,
+                            Icon = "czerato.png",
+                            Key = "champion-zerato",
+                            Name = "Champion Zerato"
+                        },
+                        new
+                        {
+                            Id = 71,
+                            Icon = "dcorvus.png",
+                            Key = "dark-corvus",
+                            Name = "Dark Corvus"
+                        },
+                        new
+                        {
+                            Id = 72,
+                            Icon = "destina.png",
+                            Key = "destina",
+                            Name = "Destina"
+                        },
+                        new
+                        {
+                            Id = 73,
+                            Icon = "diene.png",
+                            Key = "diene",
+                            Name = "Diene"
+                        },
+                        new
+                        {
+                            Id = 74,
+                            Icon = "dilibet.png",
+                            Key = "designer-lilibet",
+                            Name = "Designer Lilibet"
+                        },
+                        new
+                        {
+                            Id = 75,
+                            Icon = "dingo.png",
+                            Key = "dingo",
+                            Name = "Dingo"
+                        },
+                        new
+                        {
+                            Id = 76,
+                            Icon = "dizzy.png",
+                            Key = "dizzy",
+                            Name = "Dizzy"
+                        },
+                        new
+                        {
+                            Id = 77,
+                            Icon = "djb.png",
+                            Key = "desert-jewel-basar",
+                            Name = "Desert Jewel Basar"
+                        },
+                        new
+                        {
+                            Id = 78,
+                            Icon = "dmpearlhorizon.png",
+                            Key = "doll-maker-pearlhorizon",
+                            Name = "Doll Maker Pearlhorizon"
+                        },
+                        new
+                        {
+                            Id = 79,
+                            Icon = "dom.png",
+                            Key = "dominiel",
+                            Name = "Dominiel"
+                        },
+                        new
+                        {
+                            Id = 80,
+                            Icon = "doris.png",
+                            Key = "doris",
+                            Name = "Doris"
+                        },
+                        new
+                        {
+                            Id = 81,
+                            Icon = "eaton.png",
+                            Key = "eaton",
+                            Name = "Eaton"
+                        },
+                        new
+                        {
+                            Id = 82,
+                            Icon = "eda.png",
+                            Key = "eda",
+                            Name = "Eda"
+                        },
+                        new
+                        {
+                            Id = 83,
+                            Icon = "elena.png",
+                            Key = "elena",
+                            Name = "Elena"
+                        },
+                        new
+                        {
+                            Id = 84,
+                            Icon = "elphelt.png",
+                            Key = "elphelt",
+                            Name = "Elphelt"
+                        },
+                        new
+                        {
+                            Id = 85,
+                            Icon = "elson.png",
+                            Key = "elson",
+                            Name = "Elson"
+                        },
+                        new
+                        {
+                            Id = 86,
+                            Icon = "emilia.png",
+                            Key = "emilia",
+                            Name = "Emilia"
+                        },
+                        new
+                        {
+                            Id = 87,
+                            Icon = "Enott-icon.png",
+                            Key = "enott",
+                            Name = "Enott"
+                        },
+                        new
+                        {
+                            Id = 88,
+                            Icon = "Ervalen-icon.png",
+                            Key = "ervalen",
+                            Name = "Ervalen"
+                        },
+                        new
+                        {
+                            Id = 89,
+                            Icon = "Fairytale-Tenebria-icon.png",
+                            Key = "fairy-tale-tenebria",
+                            Name = "Fairytale Tenebria"
+                        },
+                        new
+                        {
+                            Id = 90,
+                            Icon = "Falconer-Kluri-icon.png",
+                            Key = "falconer-kluri",
+                            Name = "Falconer Kluri"
+                        },
+                        new
+                        {
+                            Id = 91,
+                            Icon = "Fallen-Cecilia-icon.png",
+                            Key = "fallen-cecilia",
+                            Name = "Fallen Cecilia"
+                        },
+                        new
+                        {
+                            Id = 92,
+                            Icon = "Fighter-Maya-icon.png",
+                            Key = "fighter-maya",
+                            Name = "Fighter Maya"
+                        },
+                        new
+                        {
+                            Id = 93,
+                            Icon = "Flan-icon-1-1.png",
+                            Key = "flan",
+                            Name = "Flan"
+                        },
+                        new
+                        {
+                            Id = 94,
+                            Icon = "Free-Spirit-Tieria-icon.png",
+                            Key = "free-spirit-tieria",
+                            Name = "Free Spirit Tieria"
+                        },
+                        new
+                        {
+                            Id = 95,
+                            Icon = "Furious-icon.png",
+                            Key = "furious",
+                            Name = "Furious"
+                        },
+                        new
+                        {
+                            Id = 96,
+                            Icon = "General-Purrgis-icon.png",
+                            Key = "general-purrgis",
+                            Name = "General Purrgis"
+                        },
+                        new
+                        {
+                            Id = 97,
+                            Icon = "Glenn-icon-real.png",
+                            Key = "glenn",
+                            Name = "Glenn"
+                        },
+                        new
+                        {
+                            Id = 98,
+                            Icon = "Gloomyrain-icon.png",
+                            Key = "gloomyrain",
+                            Name = "Gloomyrain"
+                        },
+                        new
+                        {
+                            Id = 99,
+                            Icon = "Godmother-icon-real.png",
+                            Key = "godmother",
+                            Name = "Godmother"
+                        },
+                        new
+                        {
+                            Id = 100,
+                            Icon = "Great-Chief-Khawana-icon.png",
+                            Key = "great-chief-khawana",
+                            Name = "Great Chief Khawana"
+                        },
+                        new
+                        {
+                            Id = 101,
+                            Icon = "Guider-Aither-icon.png",
+                            Key = "guider-aither",
+                            Name = "Guider Aither"
+                        },
+                        new
+                        {
+                            Id = 102,
+                            Icon = "hasol-icon.jpeg",
+                            Key = "hasol",
+                            Name = "Hasol"
+                        },
+                        new
+                        {
+                            Id = 103,
+                            Icon = "Haste-icon.png",
+                            Key = "haste",
+                            Name = "Haste"
+                        },
+                        new
+                        {
+                            Id = 104,
+                            Icon = "Hataan-icon.png",
+                            Key = "hataan",
+                            Name = "Hataan"
+                        },
+                        new
+                        {
+                            Id = 105,
+                            Icon = "Hazel-icon.png",
+                            Key = "hazel",
+                            Name = "Hazel"
+                        },
+                        new
+                        {
+                            Id = 106,
+                            Icon = "Helen-icon.png",
+                            Key = "helen",
+                            Name = "Helen"
+                        },
+                        new
+                        {
+                            Id = 107,
+                            Icon = "Helga-icon.png",
+                            Key = "helga",
+                            Name = "Helga"
+                        },
+                        new
+                        {
+                            Id = 108,
+                            Icon = "Holiday-yufine-icon-for-real.png",
+                            Key = "holiday-yufine",
+                            Name = "Holiday Yufine"
+                        },
+                        new
+                        {
+                            Id = 109,
+                            Icon = "holy-flame-adin-icon.jpeg",
+                            Key = "holy-flame-adin",
+                            Name = "Holy Flame Adin"
+                        },
+                        new
+                        {
+                            Id = 110,
+                            Icon = "Hurado-icon.png",
+                            Key = "hurado",
+                            Name = "Hurado"
+                        },
+                        new
+                        {
+                            Id = 111,
+                            Icon = "hwayoung-icon.jpeg",
+                            Key = "hwayoung",
+                            Name = "Hwayoung"
+                        },
+                        new
+                        {
+                            Id = 112,
+                            Icon = "ian-icon-1.png",
+                            Key = "ian",
+                            Name = "Ian"
+                        },
+                        new
+                        {
+                            Id = 113,
+                            Icon = "Ilynav-icon.png",
+                            Key = "ilynav",
+                            Name = "Ilynav"
+                        },
+                        new
+                        {
+                            Id = 114,
+                            Icon = "Inferno-Khawazu-icon-actual.png",
+                            Key = "inferno-khawazu",
+                            Name = "Inferno Khawazu"
+                        },
+                        new
+                        {
+                            Id = 115,
+                            Icon = "Iseria-icon.png",
+                            Key = "iseria",
+                            Name = "Iseria"
+                        },
+                        new
+                        {
+                            Id = 116,
+                            Icon = "jack-o-icon.jpeg",
+                            Key = "jack-o",
+                            Name = "Jack'O"
+                        },
+                        new
+                        {
+                            Id = 117,
+                            Icon = "januta-icon.jpeg",
+                            Key = "januta",
+                            Name = "Januta"
+                        },
+                        new
+                        {
+                            Id = 118,
+                            Icon = "Jecht-icon.png",
+                            Key = "jecht",
+                            Name = "Jecht"
+                        },
+                        new
+                        {
+                            Id = 119,
+                            Icon = "Jena-icon.png",
+                            Key = "jena",
+                            Name = "Jena"
+                        },
+                        new
+                        {
+                            Id = 120,
+                            Icon = "Judge-Kise-icon.png",
+                            Key = "judge-kise",
+                            Name = "Judge Kise"
+                        },
+                        new
+                        {
+                            Id = 121,
+                            Icon = "Judith-icon.jpeg",
+                            Key = "judith",
+                            Name = "Judith"
+                        },
+                        new
+                        {
+                            Id = 122,
+                            Icon = "Kanna-icon.png",
+                            Key = "kanna",
+                            Name = "Kanna"
+                        },
+                        new
+                        {
+                            Id = 123,
+                            Icon = "Karin-icon.jpeg",
+                            Key = "karin",
+                            Name = "Karin"
+                        },
+                        new
+                        {
+                            Id = 124,
+                            Icon = "kawa-3.png",
+                            Key = "khawana",
+                            Name = "Khawana"
+                        },
+                        new
+                        {
+                            Id = 125,
+                            Icon = "kawerick-2.png",
+                            Key = "kawerick",
+                            Name = "Kawerick"
+                        },
+                        new
+                        {
+                            Id = 126,
+                            Icon = "Ken-icon.png",
+                            Key = "ken",
+                            Name = "Ken"
+                        },
+                        new
+                        {
+                            Id = 127,
+                            Icon = "khawazu-3.png",
+                            Key = "khawazu",
+                            Name = "Khawazu"
+                        },
+                        new
+                        {
+                            Id = 128,
+                            Icon = "kikirat-v2-icon.png",
+                            Key = "kikirat-v2",
+                            Name = "Kikirat V2"
+                        },
+                        new
+                        {
+                            Id = 129,
+                            Icon = "Kiris-icon.jpeg",
+                            Key = "kiris",
+                            Name = "Kiris"
+                        },
+                        new
+                        {
+                            Id = 130,
+                            Icon = "kitty-icon.png",
+                            Key = "kitty-cat-clarissa",
+                            Name = "Kitty Cat Clarissa"
+                        },
+                        new
+                        {
+                            Id = 131,
+                            Icon = "kizuna-ai-icon.jpeg",
+                            Key = "kizuna-ai",
+                            Name = "Kizuna Ai"
+                        },
+                        new
+                        {
+                            Id = 132,
+                            Icon = "Krau-icon.jpeg",
+                            Key = "krau",
+                            Name = "Krau"
+                        },
+                        new
+                        {
+                            Id = 133,
+                            Icon = "Kururi-icon.jpeg",
+                            Key = "kluri",
+                            Name = "Kluri"
+                        },
+                        new
+                        {
+                            Id = 134,
+                            Icon = "Laika-icon.png",
+                            Key = "laika",
+                            Name = "Laika"
+                        },
+                        new
+                        {
+                            Id = 135,
+                            Icon = "Landy-icon-2.png",
+                            Key = "landy",
+                            Name = "Landy"
+                        },
+                        new
+                        {
+                            Id = 136,
+                            Icon = "Las-icon.jpeg",
+                            Key = "ras",
+                            Name = "Ras"
+                        },
+                        new
+                        {
+                            Id = 137,
+                            Icon = "last-rider-krau-icon.jpeg",
+                            Key = "last-rider-krau",
+                            Name = "Last Rider Krau"
+                        },
+                        new
+                        {
+                            Id = 138,
+                            Icon = "Latz-icon.jpeg",
+                            Key = "lots",
+                            Name = "Lots"
+                        },
+                        new
+                        {
+                            Id = 139,
+                            Icon = "lena.jpeg",
+                            Key = "lena",
+                            Name = "Lena"
+                        },
+                        new
+                        {
+                            Id = 140,
+                            Icon = "Leo-icon.jpeg",
+                            Key = "leo",
+                            Name = "Leo"
+                        },
+                        new
+                        {
+                            Id = 141,
+                            Icon = "lidia-face.png",
+                            Key = "lidia",
+                            Name = "Lidia"
+                        },
+                        new
+                        {
+                            Id = 142,
+                            Icon = "lilias-icon.jpeg",
+                            Key = "lilias",
+                            Name = "Lilias"
+                        },
+                        new
+                        {
+                            Id = 143,
+                            Icon = "lilibet-3.png",
+                            Key = "lilibet",
+                            Name = "Lilibet"
+                        },
+                        new
+                        {
+                            Id = 144,
+                            Icon = "lionheart-cermia-icon.jpeg",
+                            Key = "lionheart-cermia",
+                            Name = "Lionheart Cermia"
+                        },
+                        new
+                        {
+                            Id = 145,
+                            Icon = "Little-Queen-Charlotte-icon.png",
+                            Key = "little-queen-charlotte",
+                            Name = "Little Queen Charlotte"
+                        },
+                        new
+                        {
+                            Id = 146,
+                            Icon = "roana.png",
+                            Key = "roana",
+                            Name = "Roana"
+                        },
+                        new
+                        {
+                            Id = 147,
+                            Icon = "Lorina-icon.jpeg",
+                            Key = "lorina",
+                            Name = "Lorina"
+                        },
+                        new
+                        {
+                            Id = 148,
+                            Icon = "Lucy-icon.png",
+                            Key = "lucy",
+                            Name = "Lucy"
+                        },
+                        new
+                        {
+                            Id = 149,
+                            Icon = "Ludwig-icon.jpeg",
+                            Key = "ludwig",
+                            Name = "Ludwig"
+                        },
+                        new
+                        {
+                            Id = 150,
+                            Icon = "luluca-icon.png",
+                            Key = "luluca",
+                            Name = "Luluca"
+                        },
+                        new
+                        {
+                            Id = 151,
+                            Icon = "Luna-icon.jpeg",
+                            Key = "luna",
+                            Name = "Luna"
+                        },
+                        new
+                        {
+                            Id = 152,
+                            Icon = "Magic-Scholar-Doris-icon-1.png",
+                            Key = "magic-scholar-doris",
+                            Name = "Magic Scholar Doris"
+                        },
+                        new
+                        {
+                            Id = 153,
+                            Icon = "mascot.png",
+                            Key = "mascot-hazel",
+                            Name = "Mascot Hazel"
+                        },
+                        new
+                        {
+                            Id = 154,
+                            Icon = "Maya-icon.png",
+                            Key = "maya",
+                            Name = "Maya"
+                        },
+                        new
+                        {
+                            Id = 155,
+                            Icon = "Mediator-Kawerick-icon.png",
+                            Key = "mediator-kawerick",
+                            Name = "Mediator Kawerick"
+                        },
+                        new
+                        {
+                            Id = 156,
+                            Icon = "Melany-icon.png",
+                            Key = "melany",
+                            Name = "Melany"
+                        },
+                        new
+                        {
+                            Id = 157,
+                            Icon = "melissa-icon.jpeg",
+                            Key = "melissa",
+                            Name = "Melissa"
+                        },
+                        new
+                        {
+                            Id = 158,
+                            Icon = "Mercedes-icon.png",
+                            Key = "mercedes",
+                            Name = "Mercedes"
+                        },
+                        new
+                        {
+                            Id = 159,
+                            Icon = "mercenary-helga-face.png",
+                            Key = "mercenary-helga",
+                            Name = "Mercenary Helga"
+                        },
+                        new
+                        {
+                            Id = 160,
+                            Icon = "Milim-icon.png",
+                            Key = "milim",
+                            Name = "Milim"
+                        },
+                        new
+                        {
+                            Id = 161,
+                            Icon = "Mirsa-icon.jpeg",
+                            Key = "mirsa",
+                            Name = "Mirsa"
+                        },
+                        new
+                        {
+                            Id = 162,
+                            Icon = "Mistychain-icon.jpeg",
+                            Key = "mistychain",
+                            Name = "Mistychain"
+                        },
+                        new
+                        {
+                            Id = 163,
+                            Icon = "ml-aramintha-icon.png",
+                            Key = "silver-blade-aramintha",
+                            Name = "Silver Blade Aramintha"
+                        },
+                        new
+                        {
+                            Id = 164,
+                            Icon = "mlken.jpeg",
+                            Key = "martial-artist-ken",
+                            Name = "Martial Artist Ken"
+                        },
+                        new
+                        {
+                            Id = 165,
+                            Icon = "Montmorancy-Icon.png",
+                            Key = "montmorancy",
+                            Name = "Montmorancy"
+                        },
+                        new
+                        {
+                            Id = 166,
+                            Icon = "Mort-icon.png",
+                            Key = "mort",
+                            Name = "Mort"
+                        },
+                        new
+                        {
+                            Id = 167,
+                            Icon = "Mucacha-icon.jpeg",
+                            Key = "mucacha",
+                            Name = "Mucacha"
+                        },
+                        new
+                        {
+                            Id = 168,
+                            Icon = "mui-face.png",
+                            Key = "mui",
+                            Name = "Mui"
+                        },
+                        new
+                        {
+                            Id = 169,
+                            Icon = "Muse-Rima-icon.png",
+                            Key = "muse-rima",
+                            Name = "Muse Rima"
+                        },
+                        new
+                        {
+                            Id = 170,
+                            Icon = "muwi-icon.jpeg",
+                            Key = "muwi",
+                            Name = "Muwi"
+                        },
+                        new
+                        {
+                            Id = 171,
+                            Icon = "Nemunas-icon.jpeg",
+                            Key = "nemunas",
+                            Name = "Nemunas"
+                        },
+                        new
+                        {
+                            Id = 172,
+                            Icon = "Operator-Sigret-icon.png",
+                            Key = "operator-sigret",
+                            Name = "Operator Sigret"
+                        },
+                        new
+                        {
+                            Id = 173,
+                            Icon = "orte-icon.jpeg",
+                            Key = "orte",
+                            Name = "Orte"
+                        },
+                        new
+                        {
+                            Id = 174,
+                            Icon = "Otillie-icon.jpeg",
+                            Key = "otillie",
+                            Name = "Otillie"
+                        },
+                        new
+                        {
+                            Id = 175,
+                            Icon = "pavel-1.png",
+                            Key = "pavel",
+                            Name = "Pavel"
+                        },
+                        new
+                        {
+                            Id = 176,
+                            Icon = "Pearlhorizon-icon.png",
+                            Key = "pearlhorizon",
+                            Name = "Pearlhorizon"
+                        },
+                        new
+                        {
+                            Id = 177,
+                            Icon = "peira-icon.jpeg",
+                            Key = "peira",
+                            Name = "Peira"
+                        },
+                        new
+                        {
+                            Id = 178,
+                            Icon = "Penelope-icon.png",
+                            Key = "penelope",
+                            Name = "Penelope"
+                        },
+                        new
+                        {
+                            Id = 179,
+                            Icon = "pirate-captain-flan-icon.jpeg",
+                            Key = "pirate-captain-flan",
+                            Name = "Pirate Captain Flan"
+                        },
+                        new
+                        {
+                            Id = 180,
+                            Icon = "Politis-icon.png",
+                            Key = "politis",
+                            Name = "Politis"
+                        },
+                        new
+                        {
+                            Id = 181,
+                            Icon = "Purrgis-icon.jpeg",
+                            Key = "purrgis",
+                            Name = "Purrgis"
+                        },
+                        new
+                        {
+                            Id = 182,
+                            Icon = "Pyllis-icon.jpeg",
+                            Key = "pyllis",
+                            Name = "Pyllis"
+                        },
+                        new
+                        {
+                            Id = 183,
+                            Icon = "blaze-dingo.png",
+                            Key = "blaze-dingo",
+                            Name = "Blaze Dingo"
+                        },
+                        new
+                        {
+                            Id = 184,
+                            Icon = "Raci-icon.jpeg",
+                            Key = "ravi",
+                            Name = "Ravi"
+                        },
+                        new
+                        {
+                            Id = 185,
+                            Icon = "Ram-icon.png",
+                            Key = "ram",
+                            Name = "Ram"
+                        },
+                        new
+                        {
+                            Id = 186,
+                            Icon = "Ran-icon.png",
+                            Key = "ran",
+                            Name = "Ran"
+                        },
+                        new
+                        {
+                            Id = 187,
+                            Icon = "Ray-icon.png",
+                            Key = "ray",
+                            Name = "Ray"
+                        },
+                        new
+                        {
+                            Id = 188,
+                            Icon = "Rem.png",
+                            Key = "rem",
+                            Name = "Rem"
+                        },
+                        new
+                        {
+                            Id = 189,
+                            Icon = "remnant-violet-icon.jpeg",
+                            Key = "remnant-violet",
+                            Name = "Remnant Violet"
+                        },
+                        new
+                        {
+                            Id = 190,
+                            Icon = "Requiemroar-icon.jpeg",
+                            Key = "requiemroar",
+                            Name = "Requiemroar"
+                        },
+                        new
+                        {
+                            Id = 191,
+                            Icon = "researcher-carrot-icon.jpeg",
+                            Key = "researcher-carrot",
+                            Name = "Researcher Carrot"
+                        },
+                        new
+                        {
+                            Id = 192,
+                            Icon = "Rikoris-icon.jpeg",
+                            Key = "rikoris",
+                            Name = "Rikoris"
+                        },
+                        new
+                        {
+                            Id = 193,
+                            Icon = "Rima-icon.jpeg",
+                            Key = "rima",
+                            Name = "Rima"
+                        },
+                        new
+                        {
+                            Id = 194,
+                            Icon = "Rimuru-icon.png",
+                            Key = "rimuru",
+                            Name = "Rimuru"
+                        },
+                        new
+                        {
+                            Id = 195,
+                            Icon = "Rin-icon.jpeg",
+                            Key = "rin",
+                            Name = "Rin"
+                        },
+                        new
+                        {
+                            Id = 196,
+                            Icon = "Romann-icon.jpeg",
+                            Key = "romann",
+                            Name = "Romann"
+                        },
+                        new
+                        {
+                            Id = 197,
+                            Icon = "Roozid-icon.jpeg",
+                            Key = "roozid",
+                            Name = "Roozid"
+                        },
+                        new
+                        {
+                            Id = 198,
+                            Icon = "Rose-icon.jpeg",
+                            Key = "rose",
+                            Name = "Rose"
+                        },
+                        new
+                        {
+                            Id = 199,
+                            Icon = "Ruele-of-Light-icon.jpeg",
+                            Key = "ruele-of-light",
+                            Name = "Ruele of Light"
+                        },
+                        new
+                        {
+                            Id = 200,
+                            Icon = "Sage-Baal-Sezan-icon.png",
+                            Key = "sage-baal-and-sezan",
+                            Name = "Sage Baal and Sezan"
+                        },
+                        new
+                        {
+                            Id = 201,
+                            Icon = "Schuri-icon.jpeg",
+                            Key = "schuri",
+                            Name = "Schuri"
+                        },
+                        new
+                        {
+                            Id = 202,
+                            Icon = "maid-chloe.png",
+                            Key = "maid-chloe",
+                            Name = "Maid Chloe"
+                        },
+                        new
+                        {
+                            Id = 203,
+                            Icon = "kise.png",
+                            Key = "kise",
+                            Name = "Kise"
+                        },
+                        new
+                        {
+                            Id = 204,
+                            Icon = "kayron.png",
+                            Key = "kayron",
+                            Name = "Kayron"
+                        },
+                        new
+                        {
+                            Id = 205,
+                            Icon = "seaside-bellona-icon.jpeg",
+                            Key = "seaside-bellona",
+                            Name = "Seaside Bellona"
+                        },
+                        new
+                        {
+                            Id = 206,
+                            Icon = "Sekret-icons.jpeg",
+                            Key = "sigret",
+                            Name = "Sigret"
+                        },
+                        new
+                        {
+                            Id = 207,
+                            Icon = "Senya-icon.png",
+                            Key = "senya",
+                            Name = "Senya"
+                        },
+                        new
+                        {
+                            Id = 208,
+                            Icon = "Serila-icon.jpeg",
+                            Key = "serila",
+                            Name = "Serila"
+                        },
+                        new
+                        {
+                            Id = 209,
+                            Icon = "Sez-icon.jpeg",
+                            Key = "sez",
+                            Name = "Sez"
+                        },
+                        new
+                        {
+                            Id = 210,
+                            Icon = "Shadow-Knight-Pyllis-icon.png",
+                            Key = "shadow-knight-pyllis",
+                            Name = "Shadow Knight Pyllis"
+                        },
+                        new
+                        {
+                            Id = 211,
+                            Icon = "Shadow-Rose-icon.jpeg",
+                            Key = "shadow-rose",
+                            Name = "Shadow Rose"
+                        },
+                        new
+                        {
+                            Id = 212,
+                            Icon = "Shooting-Star-Achates.jpeg",
+                            Key = "shooting-star-achates",
+                            Name = "Shooting Star Achates"
+                        },
+                        new
+                        {
+                            Id = 213,
+                            Icon = "Shuna-icon.png",
+                            Key = "shuna",
+                            Name = "Shuna"
+                        },
+                        new
+                        {
+                            Id = 214,
+                            Icon = "Silk-icon.jpeg",
+                            Key = "silk",
+                            Name = "Silk"
+                        },
+                        new
+                        {
+                            Id = 215,
+                            Icon = "singelica.png",
+                            Key = "sinful-angelica",
+                            Name = "Sinful Angelica"
+                        },
+                        new
+                        {
+                            Id = 216,
+                            Icon = "sol-3.png",
+                            Key = "sol-badguy",
+                            Name = "Sol Badguy"
+                        },
+                        new
+                        {
+                            Id = 217,
+                            Icon = "Solitaria-icon.png",
+                            Key = "solitaria",
+                            Name = "Solitaria"
+                        },
+                        new
+                        {
+                            Id = 218,
+                            Icon = "Sonia-icon.png",
+                            Key = "sonia",
+                            Name = "Sonia"
+                        },
+                        new
+                        {
+                            Id = 219,
+                            Icon = "specimen-sez.jpeg",
+                            Key = "specimen-sez",
+                            Name = "Specimen Sez"
+                        },
+                        new
+                        {
+                            Id = 220,
+                            Icon = "Spirit-Eye-Celine-icon.png",
+                            Key = "spirit-eye-celine",
+                            Name = "Spirit Eye Celine"
+                        },
+                        new
+                        {
+                            Id = 221,
+                            Icon = "Straze-icon.png",
+                            Key = "straze",
+                            Name = "Staze"
+                        },
+                        new
+                        {
+                            Id = 222,
+                            Icon = "Summertime-Iseria-icon.png",
+                            Key = "summertime-iseria",
+                            Name = "Summertime Iseria"
+                        },
+                        new
+                        {
+                            Id = 223,
+                            Icon = "Support-Model-Brinus-icon.png",
+                            Key = "support-model-brinus",
+                            Name = "Support Model Brinus"
+                        },
+                        new
+                        {
+                            Id = 224,
+                            Icon = "Surin-icon.jpeg",
+                            Key = "surin",
+                            Name = "Surin"
+                        },
+                        new
+                        {
+                            Id = 225,
+                            Icon = "Sven-icon.jpeg",
+                            Key = "sven",
+                            Name = "Sven"
+                        },
+                        new
+                        {
+                            Id = 226,
+                            Icon = "taeyou-icon.jpeg",
+                            Key = "taeyou",
+                            Name = "Taeyou"
+                        },
+                        new
+                        {
+                            Id = 227,
+                            Icon = "tammarine-face.png",
+                            Key = "tamarinne",
+                            Name = "Tamarinne"
+                        },
+                        new
+                        {
+                            Id = 228,
+                            Icon = "taranor-guard-icon.png",
+                            Key = "taranor-guard",
+                            Name = "Taranor Guard"
+                        },
+                        new
+                        {
+                            Id = 229,
+                            Icon = "taranor-royal-guard-icon.png",
+                            Key = "taranor-royal-guard",
+                            Name = "Taranor Royal Guard"
+                        },
+                        new
+                        {
+                            Id = 230,
+                            Icon = "Tempest-Surin-icon.png",
+                            Key = "tempest-surin",
+                            Name = "Tempest Surin"
+                        },
+                        new
+                        {
+                            Id = 231,
+                            Icon = "Tenebria-icon.jpeg",
+                            Key = "tenebria",
+                            Name = "Tenebria"
+                        },
+                        new
+                        {
+                            Id = 232,
+                            Icon = "thief-roozid.png",
+                            Key = "righteous-theif-roozid",
+                            Name = "Righteous Thief Roozid"
+                        },
+                        new
+                        {
+                            Id = 233,
+                            Icon = "Tieria-icon.jpeg",
+                            Key = "tieria",
+                            Name = "Tieria"
+                        },
+                        new
+                        {
+                            Id = 234,
+                            Icon = "top-model-luluca.jpeg",
+                            Key = "top-model-luluca",
+                            Name = "Top Model Luluca"
+                        },
+                        new
+                        {
+                            Id = 235,
+                            Icon = "troublemaker-crozet-icon.jpeg",
+                            Key = "troublemaker-crozet",
+                            Name = "Troublemaker Crozet"
+                        },
+                        new
+                        {
+                            Id = 236,
+                            Icon = "Tywin-icon.jpeg",
+                            Key = "tywin",
+                            Name = "Tywin"
+                        },
+                        new
+                        {
+                            Id = 237,
+                            Icon = "verdant-adin-icon.jpeg",
+                            Key = "verdant-adin",
+                            Name = "Verdant Adin"
+                        },
+                        new
+                        {
+                            Id = 238,
+                            Icon = "vigilante-leader-glenn.jpeg",
+                            Key = "vigilante-leader-glenn",
+                            Name = "Vigilante Leader Glenn"
+                        },
+                        new
+                        {
+                            Id = 239,
+                            Icon = "Vildred-icon.jpeg",
+                            Key = "vildred",
+                            Name = "Vildred"
+                        },
+                        new
+                        {
+                            Id = 240,
+                            Icon = "Violet-icon.png",
+                            Key = "violet",
+                            Name = "Violet"
+                        },
+                        new
+                        {
+                            Id = 241,
+                            Icon = "Visionary-Tenebria.jpeg",
+                            Key = "specter-tenebria",
+                            Name = "Specter Tenebria"
+                        },
+                        new
+                        {
+                            Id = 242,
+                            Icon = "vivian_1.png",
+                            Key = "vivian",
+                            Name = "Vivian"
+                        },
+                        new
+                        {
+                            Id = 243,
+                            Icon = "Wanda-icon.jpeg",
+                            Key = "wanda",
+                            Name = "Wanda"
+                        },
+                        new
+                        {
+                            Id = 244,
+                            Icon = "Wanderer-Silk-icon.jpeg",
+                            Key = "wanderer-silk",
+                            Name = "Wanderer-Silk-icon"
+                        },
+                        new
+                        {
+                            Id = 245,
+                            Icon = "warrior-leo.jpeg",
+                            Key = "roaming-warrior-leo",
+                            Name = "Roaming Warrior Leo"
+                        },
+                        new
+                        {
+                            Id = 246,
+                            Icon = "watcherschuri.jpeg",
+                            Key = "watcher-schuri",
+                            Name = "Watcher Schuri"
+                        },
+                        new
+                        {
+                            Id = 247,
+                            Icon = "yoonryoung-icon.jpeg",
+                            Key = "yoonryoung",
+                            Name = "Yoonryoung"
+                        },
+                        new
+                        {
+                            Id = 248,
+                            Icon = "Yufine-icon.jpeg",
+                            Key = "yufine",
+                            Name = "Yufine"
+                        },
+                        new
+                        {
+                            Id = 249,
+                            Icon = "yulha-icon.jpeg",
+                            Key = "yulha",
+                            Name = "Yulha"
+                        },
+                        new
+                        {
+                            Id = 250,
+                            Icon = "Yuna-icon.jpeg",
+                            Key = "yuna",
+                            Name = "Yuna"
+                        },
+                        new
+                        {
+                            Id = 251,
+                            Icon = "Zahhak-icon-real.png",
+                            Key = "zahhak",
+                            Name = "Zahhak"
+                        },
+                        new
+                        {
+                            Id = 252,
+                            Icon = "Zealot-Carmainerose-icon.png",
+                            Key = "zealot-carmainerose",
+                            Name = "Zealot Carmainerose"
+                        },
+                        new
+                        {
+                            Id = 253,
+                            Icon = "zeno.jpeg",
+                            Key = "zeno",
+                            Name = "Zeno"
+                        },
+                        new
+                        {
+                            Id = 254,
+                            Icon = "Zerato-icon.jpeg",
+                            Key = "zerato",
+                            Name = "Zerato"
+                        },
+                        new
+                        {
+                            Id = 255,
+                            Icon = "Faithless-Lidica-icon.png",
+                            Key = "faithless-lidica",
+                            Name = "Faithless Lidica"
+                        },
+                        new
+                        {
+                            Id = 256,
+                            Icon = "Gunther-icon.png",
+                            Key = "gunther",
+                            Name = "Gunther"
+                        });
                 });
 
             modelBuilder.Entity("E7GuildWarRecorder.Models.Match", b =>
@@ -52,30 +1846,24 @@ namespace E7GuildWarRecorder.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.Property<int?>("Defense1Id")
-                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<int?>("Defense2Id")
-                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<int?>("Defense3Id")
-                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<string>("Notes")
                         .HasColumnType("longtext");
 
                     b.Property<int?>("Offense1Id")
-                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<int?>("Offense2Id")
-                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<int?>("Offense3Id")
-                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<string>("Result")
@@ -105,40 +1893,28 @@ namespace E7GuildWarRecorder.Migrations
             modelBuilder.Entity("E7GuildWarRecorder.Models.Match", b =>
                 {
                     b.HasOne("E7GuildWarRecorder.Models.Hero", "Defense1")
-                        .WithMany()
-                        .HasForeignKey("Defense1Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithMany("Defense1Matches")
+                        .HasForeignKey("Defense1Id");
 
                     b.HasOne("E7GuildWarRecorder.Models.Hero", "Defense2")
-                        .WithMany()
-                        .HasForeignKey("Defense2Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithMany("Defense2Matches")
+                        .HasForeignKey("Defense2Id");
 
                     b.HasOne("E7GuildWarRecorder.Models.Hero", "Defense3")
-                        .WithMany()
-                        .HasForeignKey("Defense3Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithMany("Defense3Matches")
+                        .HasForeignKey("Defense3Id");
 
                     b.HasOne("E7GuildWarRecorder.Models.Hero", "Offense1")
-                        .WithMany()
-                        .HasForeignKey("Offense1Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithMany("Offense1Matches")
+                        .HasForeignKey("Offense1Id");
 
                     b.HasOne("E7GuildWarRecorder.Models.Hero", "Offense2")
-                        .WithMany()
-                        .HasForeignKey("Offense2Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithMany("Offense2Matches")
+                        .HasForeignKey("Offense2Id");
 
                     b.HasOne("E7GuildWarRecorder.Models.Hero", "Offense3")
-                        .WithMany()
-                        .HasForeignKey("Offense3Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithMany("Offense3Matches")
+                        .HasForeignKey("Offense3Id");
 
                     b.Navigation("Defense1");
 
@@ -151,6 +1927,21 @@ namespace E7GuildWarRecorder.Migrations
                     b.Navigation("Offense2");
 
                     b.Navigation("Offense3");
+                });
+
+            modelBuilder.Entity("E7GuildWarRecorder.Models.Hero", b =>
+                {
+                    b.Navigation("Defense1Matches");
+
+                    b.Navigation("Defense2Matches");
+
+                    b.Navigation("Defense3Matches");
+
+                    b.Navigation("Offense1Matches");
+
+                    b.Navigation("Offense2Matches");
+
+                    b.Navigation("Offense3Matches");
                 });
 #pragma warning restore 612, 618
         }

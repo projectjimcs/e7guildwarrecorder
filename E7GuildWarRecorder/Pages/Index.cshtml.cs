@@ -10,7 +10,7 @@ public class IndexModel : PageModel
 {
     private readonly ILogger<IndexModel> _logger;
     private readonly ApplicationDbContext _db;
-    public List<Match>? matches { get; set; }
+    public List<Match>? Matches { get; set; }
 
     public IndexModel(ILogger<IndexModel> logger, ApplicationDbContext db)
     {
@@ -20,11 +20,17 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
-        matches = _db.match.ToList();
+        Matches = _db.match.ToList();
 
-        foreach (var match in matches)
+        foreach (var match in Matches)
         {
-            Console.WriteLine(match.Offense1Id);
+            if (match.Offense1 != null)
+            {
+                Console.WriteLine(match.Offense1.Name);
+            } else
+            {
+                Console.WriteLine("Did not work");
+            }
         }
     }
 }
