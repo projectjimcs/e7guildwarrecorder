@@ -20,18 +20,9 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
-        Matches = _db.match.ToList();
+        Matches = _db.Match.ToList();
 
-        foreach (var match in Matches)
-        {
-            if (match.Offense1 != null)
-            {
-                Console.WriteLine(match.Offense1.Name);
-            } else
-            {
-                Console.WriteLine("Did not work");
-            }
-        }
+        Console.WriteLine(Matches);
     }
 }
 

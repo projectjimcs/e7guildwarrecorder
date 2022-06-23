@@ -15,9 +15,16 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td></td>
-            </tr>
+            @foreach (var match in Model.Matches)
+            {
+                <tr class="text-center">
+                    <td>
+                        <img src="@(match.Defense1 != null ? "images/icons/" + @match.Defense1.Icon : "")" />
+                        <img src="@(match.Defense2 != null ? "images/icons/" + @match.Defense2.Icon : "")" />
+                        <img src="@(match.Defense3 != null ? "images/icons/" + @match.Defense3.Icon : "")" />
+                    </td>
+                </tr>
+            }
         </tbody>
     </table>
 </div>

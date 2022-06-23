@@ -9,8 +9,8 @@ namespace E7GuildWarRecorder.Database
 	{
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
-        public DbSet<Match> match { get; set; }
-        public DbSet<Hero> hero { get; set; }
+        public DbSet<Match> Match { get; set; }
+        public DbSet<Hero> Hero { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
