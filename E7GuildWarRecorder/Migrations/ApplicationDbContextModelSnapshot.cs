@@ -101,7 +101,7 @@ namespace E7GuildWarRecorder.Migrations
                         new
                         {
                             Id = 9,
-                            Icon = "alenica.png",
+                            Icon = "alencia.png",
                             Key = "alencia",
                             Name = "Alencia"
                         },
