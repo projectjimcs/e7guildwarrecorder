@@ -4,6 +4,8 @@
     ViewData["Title"] = "Dashboard";
 }
 
+<link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+
 <div class="container">
     <table class="table">
         <thead class="text-center">
@@ -15,13 +17,45 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var match in Model.Matches)
+            @foreach (var matchArray in Model.MatchesByDefenseIds)
             {
+                @{
+                    float wonCount = 0;
+                    float lostCount = 0;
+                    float totalMatches = 0;
+                    float winRate;
+
+                    // !!! Refactor later probably
+                    foreach (var match in matchArray.Value)
+                    {
+                        if (match.Result == "lost")
+                        {
+                            lostCount++;
+                        }
+                        else
+                        {
+                            wonCount++;
+                        }
+
+                        totalMatches++;
+                    }
+
+                    winRate = (wonCount / totalMatches) * 100;
+                }
                 <tr class="text-center">
                     <td>
-                        <img src="@(match.Defense1 != null ? "images/icons/" + @match.Defense1.Icon : "")" />
-                        <img src="@(match.Defense2 != null ? "images/icons/" + @match.Defense2.Icon : "")" />
-                        <img src="@(match.Defense3 != null ? "images/icons/" + @match.Defense3.Icon : "")" />
+                        <img class="hero-icon" src="@(matchArray.Value.First().Defense1 != null ? "images/icons/" + @matchArray.Value.First().Defense1.Icon : "")" />
+                        <img class="hero-icon" src="@(matchArray.Value.First().Defense2 != null ? "images/icons/" + @matchArray.Value.First().Defense2.Icon : "")" />
+                        <img class="hero-icon" src="@(matchArray.Value.First().Defense3 != null ? "images/icons/" + @matchArray.Value.First().Defense3.Icon : "")" />
+                    </td>
+                    <td>
+                        @wonCount
+                    </td>
+                    <td>
+                        @lostCount
+                    </td>
+                    <td>
+                        @winRate
                     </td>
                 </tr>
             }
