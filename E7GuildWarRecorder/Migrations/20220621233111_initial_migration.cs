@@ -337,7 +337,7 @@ namespace E7GuildWarRecorder.Migrations
                     { 243, "Wanda-icon.jpeg", "wanda", "Wanda" },
                     { 244, "Wanderer-Silk-icon.jpeg", "wanderer-silk", "Wanderer-Silk-icon" },
                     { 245, "warrior-leo.jpeg", "roaming-warrior-leo", "Roaming Warrior Leo" },
-                    { 246, "watcherschuri.jpeg", "watcher-schuri", "Watcher Schuri" },
+                    { 246, "watchershuri.jpeg", "watcher-schuri", "Watcher Schuri" },
                     { 247, "yoonryoung-icon.jpeg", "yoonryoung", "Yoonryoung" },
                     { 248, "Yufine-icon.jpeg", "yufine", "Yufine" },
                     { 249, "yulha-icon.jpeg", "yulha", "Yulha" },
