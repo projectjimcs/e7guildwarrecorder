@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E7GuildWarRecorder.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220621233111_initial_migration")]
+    [Migration("20220625000757_initial_migration")]
     partial class initial_migration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -1844,7 +1844,7 @@ namespace E7GuildWarRecorder.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("CreatedAt")
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
 
                     b.Property<int?>("Defense1Id")
@@ -1889,7 +1889,7 @@ namespace E7GuildWarRecorder.Migrations
 
                     b.HasIndex("Offense3Id");
 
-                    b.ToTable("match");
+                    b.ToTable("Match");
                 });
 
             modelBuilder.Entity("E7GuildWarRecorder.Models.Match", b =>

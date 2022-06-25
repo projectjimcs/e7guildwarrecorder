@@ -101,7 +101,7 @@ namespace E7GuildWarRecorder.Migrations
                         new
                         {
                             Id = 9,
-                            Icon = "alencia.png",
+                            Icon = "alenica.png",
                             Key = "alencia",
                             Name = "Alencia"
                         },
@@ -1842,7 +1842,7 @@ namespace E7GuildWarRecorder.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("CreatedAt")
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
 
                     b.Property<int?>("Defense1Id")
@@ -1887,7 +1887,7 @@ namespace E7GuildWarRecorder.Migrations
 
                     b.HasIndex("Offense3Id");
 
-                    b.ToTable("match");
+                    b.ToTable("Match");
                 });
 
             modelBuilder.Entity("E7GuildWarRecorder.Models.Match", b =>

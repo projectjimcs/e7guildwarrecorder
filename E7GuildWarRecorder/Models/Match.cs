@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace E7GuildWarRecorder.Models;
 
-public class Match
+public class Match : Auditable
 {
     [Key]
     public int Id { get; set; }
@@ -24,10 +24,6 @@ public class Match
     public int? Defense3Id { get; set; }
 
     public string? Notes { get; set; }
-
-    public DateTime? CreatedAt { get; set; }
-
-    public DateTime? UpdatedAt { get; set; }
 
     [ForeignKey("Offense1Id")]
     [InverseProperty("Offense1Matches")]
