@@ -19,29 +19,28 @@
         <tbody>
             @foreach (var matchArray in Model.MatchesByDefenseIds)
             {
-                @{
-                    float wonCount = 0;
-                    float lostCount = 0;
-                    float totalMatches = 0;
-                    float winRate;
+                float wonCount = 0;
+                float lostCount = 0;
+                float totalMatches = 0;
+                float winRate;
 
-                    // !!! Refactor later probably
-                    foreach (var match in matchArray.Value)
+                // !!! Refactor later probably
+                foreach (var match in matchArray.Value)
+                {
+                    if (match.Result == "lost")
                     {
-                        if (match.Result == "lost")
-                        {
-                            lostCount++;
-                        }
-                        else
-                        {
-                            wonCount++;
-                        }
-
-                        totalMatches++;
+                        lostCount++;
+                    }
+                    else
+                    {
+                        wonCount++;
                     }
 
-                    winRate = (wonCount / totalMatches) * 100;
+                    totalMatches++;
                 }
+
+                winRate = (wonCount / totalMatches) * 100;
+
                 <tr class="text-center">
                     <td>
                         <img class="hero-icon" src="@(matchArray.Value.First().Defense1 != null ? "images/icons/" + @matchArray.Value.First().Defense1.Icon : "")" />
