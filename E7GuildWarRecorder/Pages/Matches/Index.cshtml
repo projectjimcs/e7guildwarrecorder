@@ -1,5 +1,61 @@
 ﻿@page
 @model E7GuildWarRecorder.Pages.Matches.IndexModel
 @{
+    ViewData["Title"] = "Match Details";
 }
 
+<link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+
+<div class="container">
+    <form method="get">
+        <div class="border p-3 mt-4">
+            <div class="row pb-2">
+                <h4>Filter Defense:</h4>
+            </div>
+            <div class="row">
+                <select class="mb-2 form-select" aria-label="Select a hero">
+                    <option value="" selected>Select a hero</option>
+                    @foreach (var hero in Model.Heroes)
+                    {
+                        <option value="@hero.Id">@hero.Name</option>
+                    }
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Filter</button>
+        </div>
+    </form>
+    <table class="table">
+        <thead class="text-center">
+            <tr>
+                <th scope="col">Defense</th>
+                <th scope="col">Offense</th>
+                <th scope="col">Result</th>
+                <th scope="col">Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var match in Model.Matches)
+                {
+            <tr class="text-center">
+                <td class="col-4">
+                    <img class="hero-icon" src="@(match.Defense1 != null ? "images/icons/" + @match.Defense1.Icon : "")" />
+                    <img class="hero-icon" src="@(match.Defense2 != null ? "images/icons/" + @match.Defense2.Icon : "")" />
+                    <img class="hero-icon" src="@(match.Defense3 != null ? "images/icons/" + @match.Defense3.Icon : "")" />
+                </td>
+                <td class="col-4">
+                    <img class="hero-icon" src="@(match.Offense1 != null ? "images/icons/" + @match.Offense1.Icon : "")" />
+                    <img class="hero-icon" src="@(match.Offense2 != null ? "images/icons/" + @match.Offense2.Icon : "")" />
+                    <img class="hero-icon" src="@(match.Offense3 != null ? "images/icons/" + @match.Offense3.Icon : "")" />
+                </td>
+                <td class="col-1">
+                    @* !!! This is dumb way, change it after *@
+                    <span class="@match.Result">@char.ToUpper(match.Result.First())@match.Result.Substring(1)</span>
+                </td>
+                <td class="col-3">
+                    @(match.Notes != null ? match.Notes : "")
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

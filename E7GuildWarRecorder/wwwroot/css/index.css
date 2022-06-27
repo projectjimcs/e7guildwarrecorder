@@ -1,4 +1,17 @@
 ﻿.hero-icon {
     border-radius: 50%;
     width: 100px;
+    height: 100px;
+}
+
+.won {
+    color: #5AAB61;
+}
+
+.lost {
+    color: #DC143C;
+}
+
+.draw {
+    color: #FFE800;
 }
