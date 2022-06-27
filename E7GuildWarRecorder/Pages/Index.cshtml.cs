@@ -57,18 +57,7 @@ public class IndexModel : PageModel
             {
                 MatchesByDefenseIds.Add(defenseKey, new List<Match> { match });
             }
-            //foreach (var defId in defenseIds)
-            //{
-            //    Console.WriteLine(defId);
-            //}
         }
-
-        //foreach (var mat in MatchesByDefenseIds["8-9-15"])
-        //{
-        //    Console.WriteLine(mat.Result);
-        //}
-
-        Console.WriteLine(MatchesByDefenseIds.Count());
     }
 }
 

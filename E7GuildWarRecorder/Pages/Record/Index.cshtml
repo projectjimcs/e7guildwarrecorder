@@ -14,21 +14,21 @@
             <div class="col">
                 Defense Heroes:
                 <select asp-for="Match.Defense1Id" class="mb-2 form-select" aria-label="Select a hero">
-                    <option selected>Select a hero</option>
+                    <option value="" selected>Select a hero</option>
                     @foreach (var hero in Model.Heroes)
                     {
                         <option value="@hero.Id">@hero.Name</option>
                     }
                 </select>
                 <select asp-for="Match.Defense2Id" class="mb-2 form-select" aria-label="Select a hero">
-                    <option selected>Select a hero</option>
+                    <option value="" selected>Select a hero</option>
                     @foreach (var hero in Model.Heroes)
                     {
                         <option value="@hero.Id">@hero.Name</option>
                     }
                 </select>
                 <select asp-for="Match.Defense3Id" class="mb-2 form-select" aria-label="Select a hero">
-                    <option selected>Select a hero</option>
+                    <option value="" selected>Select a hero</option>
                     @foreach (var hero in Model.Heroes)
                     {
                         <option value="@hero.Id">@hero.Name</option>
@@ -38,21 +38,21 @@
             <div class="col">
                 Offense Heroes:
                 <select asp-for="Match.Offense1Id" class="mb-2 form-select" aria-label="Select a hero">
-                    <option selected>Select a hero</option>
+                    <option value="" selected>Select a hero</option>
                     @foreach (var hero in Model.Heroes)
                     {
                         <option value="@hero.Id">@hero.Name</option>
                     }
                 </select>
                 <select asp-for="Match.Offense2Id" class="mb-2 form-select" aria-label="Select a hero">
-                    <option selected>Select a hero</option>
+                    <option value="" selected>Select a hero</option>
                     @foreach (var hero in Model.Heroes)
                     {
                         <option value="@hero.Id">@hero.Name</option>
                     }
                 </select>
                 <select asp-for="Match.Offense3Id" class="mb-2 form-select" aria-label="Select a hero">
-                    <option selected>Select a hero</option>
+                    <option value="" selected>Select a hero</option>
                     @foreach (var hero in Model.Heroes)
                     {
                         <option value="@hero.Id">@hero.Name</option>

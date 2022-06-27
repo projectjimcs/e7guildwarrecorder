@@ -73,7 +73,7 @@ namespace E7GuildWarRecorder.Database.Configuration
                     Id = 9,
                     Key = "alencia",
                     Name = "Alencia",
-                    Icon = "alenica.png"
+                    Icon = "alencia.png"
                 },
                 new Hero
                 {

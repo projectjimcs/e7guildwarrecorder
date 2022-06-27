@@ -30,11 +30,14 @@ namespace E7GuildWarRecorder.Pages.Record
 
         public async Task<IActionResult> OnPost()
         {
-            Console.WriteLine("Hello");
-            Console.WriteLine(Match.Defense1);
-            await _db.Match.AddAsync(Match);
-            await _db.SaveChangesAsync();
-            return RedirectToPage("Index");
+            if (ModelState.IsValid)
+            {
+                await _db.Match.AddAsync(Match);
+                await _db.SaveChangesAsync();
+                return RedirectToPage("/Matches/Index");
+            }
+
+            return Page();
         }
     }
 }
