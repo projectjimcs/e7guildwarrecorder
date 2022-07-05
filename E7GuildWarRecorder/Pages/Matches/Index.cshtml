@@ -12,8 +12,22 @@
             <div class="row pb-2">
                 <h4>Filter Defense:</h4>
             </div>
-            <div class="row">
-                <select class="mb-2 form-select" aria-label="Select a hero">
+            <div class="row mb-2">
+                <select asp-for="Defense1Id" class="form-select col m-2" aria-label="Select a hero">
+                    <option value="" selected>Select a hero</option>
+                    @foreach (var hero in Model.Heroes)
+                    {
+                        <option value="@hero.Id">@hero.Name</option>
+                    }
+                </select>
+                <select asp-for="Defense2Id" class="form-select col m-2" aria-label="Select a hero">
+                    <option value="" selected>Select a hero</option>
+                    @foreach (var hero in Model.Heroes)
+                    {
+                        <option value="@hero.Id">@hero.Name</option>
+                    }
+                </select>
+                <select asp-for="Defense3Id" class="form-select col m-2" aria-label="Select a hero">
                     <option value="" selected>Select a hero</option>
                     @foreach (var hero in Model.Heroes)
                     {
