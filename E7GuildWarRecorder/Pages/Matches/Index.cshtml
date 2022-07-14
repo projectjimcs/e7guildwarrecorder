@@ -45,6 +45,7 @@
                 <th scope="col">Offense</th>
                 <th scope="col">Result</th>
                 <th scope="col">Notes</th>
+                <th scope="col">Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -67,6 +68,9 @@
                 </td>
                 <td class="col-3">
                     @(match.Notes != null ? match.Notes : "")
+                </td>
+                <td>
+                    <button class="btn btn-warning">Edit</button>
                 </td>
             </tr>
             }
