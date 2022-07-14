@@ -70,7 +70,7 @@
                     @(match.Notes != null ? match.Notes : "")
                 </td>
                 <td>
-                    <button class="btn btn-warning">Edit</button>
+                    <a asp-page="/Record/Edit" asp-route-id="@match.Id" class="btn btn-warning">Edit</a>
                 </td>
             </tr>
             }
