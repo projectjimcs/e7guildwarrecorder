@@ -10,4 +10,4 @@ Guild war recorder for the mobile game Epic Seven. Used to record matches from p
 
 # Acknowledgements
 
-Inspired by Fribbels E7 Guild War Meta Tracker: [Fribbels E7 Guild War Meta Tracker](https://fribbels.github.io/e7/gw-meta.html). The project is no longer maintained so I wanted to recreate a version for my guild to reference.
+Inspired by Fribbels E7 Guild War Meta Tracker: [Fribbels E7 Guild War Meta Tracker](https://fribbels.github.io/e7/gw-meta.html). Since the project is no longer maintained, I wanted to recreate my own version for my guild to reference.
