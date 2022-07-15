@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E7GuildWarRecorder.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220625000757_initial_migration")]
+    [Migration("20220715035209_initial_migration")]
     partial class initial_migration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -103,7 +103,7 @@ namespace E7GuildWarRecorder.Migrations
                         new
                         {
                             Id = 9,
-                            Icon = "alenica.png",
+                            Icon = "alencia.png",
                             Key = "alencia",
                             Name = "Alencia"
                         },
@@ -1889,7 +1889,7 @@ namespace E7GuildWarRecorder.Migrations
 
                     b.HasIndex("Offense3Id");
 
-                    b.ToTable("Match");
+                    b.ToTable("match");
                 });
 
             modelBuilder.Entity("E7GuildWarRecorder.Models.Match", b =>

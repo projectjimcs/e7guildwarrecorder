@@ -33,7 +33,7 @@ namespace E7GuildWarRecorder.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "Match",
+                name: "match",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -53,34 +53,34 @@ namespace E7GuildWarRecorder.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Match", x => x.Id);
+                    table.PrimaryKey("PK_match", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Match_hero_Defense1Id",
+                        name: "FK_match_hero_Defense1Id",
                         column: x => x.Defense1Id,
                         principalTable: "hero",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_Match_hero_Defense2Id",
+                        name: "FK_match_hero_Defense2Id",
                         column: x => x.Defense2Id,
                         principalTable: "hero",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_Match_hero_Defense3Id",
+                        name: "FK_match_hero_Defense3Id",
                         column: x => x.Defense3Id,
                         principalTable: "hero",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_Match_hero_Offense1Id",
+                        name: "FK_match_hero_Offense1Id",
                         column: x => x.Offense1Id,
                         principalTable: "hero",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_Match_hero_Offense2Id",
+                        name: "FK_match_hero_Offense2Id",
                         column: x => x.Offense2Id,
                         principalTable: "hero",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_Match_hero_Offense3Id",
+                        name: "FK_match_hero_Offense3Id",
                         column: x => x.Offense3Id,
                         principalTable: "hero",
                         principalColumn: "Id");
@@ -100,7 +100,7 @@ namespace E7GuildWarRecorder.Migrations
                     { 6, "ainos.png", "ainos", "Ainos" },
                     { 7, "ains.png", "ains", "Ains" },
                     { 8, "aither.png", "aither", "Aither" },
-                    { 9, "alenica.png", "alencia", "Alencia" },
+                    { 9, "alencia.png", "alencia", "Alencia" },
                     { 10, "alexa.png", "alexa", "Alexa" },
                     { 11, "alots.png", "auxiliary-lots", "Auxiliary Lots" },
                     { 12, "ameru.png", "archdemon-mercedes", "Archdemon Mercedes" },
@@ -351,40 +351,40 @@ namespace E7GuildWarRecorder.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Match_Defense1Id",
-                table: "Match",
+                name: "IX_match_Defense1Id",
+                table: "match",
                 column: "Defense1Id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Match_Defense2Id",
-                table: "Match",
+                name: "IX_match_Defense2Id",
+                table: "match",
                 column: "Defense2Id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Match_Defense3Id",
-                table: "Match",
+                name: "IX_match_Defense3Id",
+                table: "match",
                 column: "Defense3Id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Match_Offense1Id",
-                table: "Match",
+                name: "IX_match_Offense1Id",
+                table: "match",
                 column: "Offense1Id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Match_Offense2Id",
-                table: "Match",
+                name: "IX_match_Offense2Id",
+                table: "match",
                 column: "Offense2Id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Match_Offense3Id",
-                table: "Match",
+                name: "IX_match_Offense3Id",
+                table: "match",
                 column: "Offense3Id");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Match");
+                name: "match");
 
             migrationBuilder.DropTable(
                 name: "hero");

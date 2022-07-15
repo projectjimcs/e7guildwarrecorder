@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace E7GuildWarRecorder.Models;
 
+[Table("match")]
 public class Match : Auditable
 {
     [Key]
