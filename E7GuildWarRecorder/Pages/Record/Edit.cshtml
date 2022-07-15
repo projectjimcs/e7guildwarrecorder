@@ -4,7 +4,7 @@
     ViewData["Title"] = "Record Matches";
 }
 
-<form method="post">
+<form id="add-edit-form" method="post">
     <div class="border p-3 mt-4">
         <div class="row pb-2">
             <h2 class="text-primary pl-3">Edit Match Data</h2>
@@ -13,21 +13,21 @@
         <div class="row">
             <div class="col">
                 Defense Heroes:
-                <select asp-for="Match.Defense1Id" class="mb-2 form-select" aria-label="Select a hero">
+                <select asp-for="Match.Defense1Id" id="defense1Id" class="mb-2 form-select" aria-label="Select a hero">
                     <option value="" selected>Select a hero</option>
                     @foreach (var hero in Model.Heroes)
                     {
                         <option value="@hero.Id">@hero.Name</option>
                     }
                 </select>
-                <select asp-for="Match.Defense2Id" class="mb-2 form-select" aria-label="Select a hero">
+                <select asp-for="Match.Defense2Id" id="defense2Id" class="mb-2 form-select" aria-label="Select a hero">
                     <option value="" selected>Select a hero</option>
                     @foreach (var hero in Model.Heroes)
                     {
                         <option value="@hero.Id">@hero.Name</option>
                     }
                 </select>
-                <select asp-for="Match.Defense3Id" class="mb-2 form-select" aria-label="Select a hero">
+                <select asp-for="Match.Defense3Id" id="defense3Id" class="mb-2 form-select" aria-label="Select a hero">
                     <option value="" selected>Select a hero</option>
                     @foreach (var hero in Model.Heroes)
                     {
@@ -37,21 +37,21 @@
             </div>
             <div class="col">
                 Offense Heroes:
-                <select asp-for="Match.Offense1Id" class="mb-2 form-select" aria-label="Select a hero">
+                <select asp-for="Match.Offense1Id" id="offense1Id" class="mb-2 form-select" aria-label="Select a hero">
                     <option value="" selected>Select a hero</option>
                     @foreach (var hero in Model.Heroes)
                     {
                         <option value="@hero.Id">@hero.Name</option>
                     }
                 </select>
-                <select asp-for="Match.Offense2Id" class="mb-2 form-select" aria-label="Select a hero">
+                <select asp-for="Match.Offense2Id" id="offense2Id" class="mb-2 form-select" aria-label="Select a hero">
                     <option value="" selected>Select a hero</option>
                     @foreach (var hero in Model.Heroes)
                     {
                         <option value="@hero.Id">@hero.Name</option>
                     }
                 </select>
-                <select asp-for="Match.Offense3Id" class="mb-2 form-select" aria-label="Select a hero">
+                <select asp-for="Match.Offense3Id" id="offense3Id" class="mb-2 form-select" aria-label="Select a hero">
                     <option value="" selected>Select a hero</option>
                     @foreach (var hero in Model.Heroes)
                     {
@@ -78,6 +78,24 @@
                 <textarea asp-for="Match.Notes" style="width:100%"></textarea>
             </div>
         </div>
-        <button type="submit" class="btn btn-primary">Save</button>
+        <button id="add-edit-submit"  type="submit" class="btn btn-primary">Save</button>
     </div>
 </form>
+
+<!-- Validation Modal -->
+<div class="modal fade" id="validation-modal" tabindex="-1" aria-labelledby="validationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="validationModalLabel">Error</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                At least one selection must be made for both defense and offense
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

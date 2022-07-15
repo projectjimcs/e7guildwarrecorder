@@ -3,13 +3,13 @@
 
 // Write your JavaScript code.
 
-$('#add-submit').on('click', function (e) {
+$('#add-edit-submit').on('click', function (e) {
     e.preventDefault();
 
     if (isValidEntry()) {
-        $('#add-form').submit();
+        $('#add-edit-form').submit();
     } else {
-        alert('At least one selection must be made for defense and offense');
+        $('#validation-modal').modal('show');
     }
 });
 

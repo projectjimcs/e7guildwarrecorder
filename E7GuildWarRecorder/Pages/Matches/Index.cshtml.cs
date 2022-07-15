@@ -33,7 +33,6 @@ namespace E7GuildWarRecorder.Pages.Matches
             .OrderBy(hero => hero.Name)
             .ToList();
 
-            Console.WriteLine(Defense1Id);
             IQueryable<Match> query = _db.Match.Select(m => m);
 
             // !!! Refactor
@@ -52,7 +51,9 @@ namespace E7GuildWarRecorder.Pages.Matches
                 query = query.Where(m => Defense3Id == m.Defense1Id || Defense3Id == m.Defense2Id || Defense3Id == m.Defense3Id);
             }
 
-            Matches = query.ToList();
+            Matches = query
+                .OrderByDescending(Match => Match.CreatedAt)
+                .ToList();
         }
     }
 }
