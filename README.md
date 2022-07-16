@@ -4,9 +4,9 @@ Guild war recorder for the mobile game Epic Seven. Used to record matches from p
 
 # Screenshots
 
-!['Preview of guild recorder dashbord'](https://user-images.githubusercontent.com/61166862/179322192-e247001e-6597-4387-9b70-8c7ffcab114d.png)
-!['Preview of guild recorder'](https://user-images.githubusercontent.com/61166862/179321075-043f755a-39ca-4d18-a024-af50bd55c228.png)
-!['Preview of guild recorder add'](https://user-images.githubusercontent.com/61166862/179320544-a483b972-c069-4483-a0bf-d97043c23470.png)
+!['Preview of guild recorder dashbord'](https://user-images.githubusercontent.com/61166862/179343024-9e566caa-c9d4-4422-892f-06a26d882f2a.png)
+!['Preview of guild recorder'](https://user-images.githubusercontent.com/61166862/179343037-5bc44736-26b1-49cc-bd46-8264566ac873.png)
+!['Preview of guild recorder add'](https://user-images.githubusercontent.com/61166862/179343061-d546d608-4aaa-47dc-be5e-fa08d5853d8e.png)
 
 # Acknowledgements
 
