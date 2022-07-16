@@ -10,7 +10,7 @@
     <form method="get">
         <div class="border p-3 mt-4">
             <div class="row pb-2">
-                <h4>Filter Defense:</h4>
+                <h4 class="text-info">FILTER DEFENSE:</h4>
             </div>
             <div class="row mb-2">
                 <select asp-for="Defense1Id" class="form-select col m-2" aria-label="Select a hero">
@@ -35,10 +35,10 @@
                     }
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Filter</button>
+            <button type="submit" class="btn btn-info">Filter</button>
         </div>
     </form>
-    <table class="table">
+    <table class="table mt-4">
         <thead class="text-center">
             <tr>
                 <th scope="col">Defense</th>

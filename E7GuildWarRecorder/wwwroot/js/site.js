@@ -3,6 +3,19 @@
 
 // Write your JavaScript code.
 
+const url = window.location.pathname;
+
+$('.navbar-nav li a').each(function () {
+    if (url.includes($(this).data('pageReference'))) {
+        $(this).parent().addClass('active');
+        $(this).removeClass('text-dark').addClass('text-light');
+
+    } else if (url === '/') { // !!! This looks kinda iffy, probably changing it...
+        $('.navbar-nav li a[data-page-reference="Dashboard"]').parent().addClass('active');
+        $('.navbar-nav li a[data-page-reference="Dashboard"]').removeClass('text-dark').addClass('text-light');
+    }
+});
+
 $('#add-edit-submit').on('click', function (e) {
     e.preventDefault();
 

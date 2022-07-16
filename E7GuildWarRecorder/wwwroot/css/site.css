@@ -16,3 +16,21 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.active {
+    background-color: #0dcaf0;
+}
+
+.nav-item {
+    border-radius: 5px;
+}
+
+/* Overwrite bootstrap style */
+.btn-info {
+    color: white;
+}
+
+.btn-info:hover {
+    color: white;
+    opacity: 80%;
+}
