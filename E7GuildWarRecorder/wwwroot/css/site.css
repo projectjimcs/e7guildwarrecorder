@@ -25,6 +25,10 @@ body {
     border-radius: 5px;
 }
 
+.large-icon {
+    font-size: 2rem;
+}
+
 /* Overwrite bootstrap style */
 .btn-info {
     color: white;
@@ -34,3 +38,4 @@ body {
     color: white;
     opacity: 80%;
 }
+
