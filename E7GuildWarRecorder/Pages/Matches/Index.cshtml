@@ -49,30 +49,114 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var match in Model.Matches)
+            @{
+                Dictionary<string, Dictionary<string, int>> matchStats = new Dictionary<string, Dictionary<string, int>>();
+                // !!! There has to be a better way to do this...come back to it
+                Dictionary<string, E7GuildWarRecorder.Models.Match> matchLookup = new Dictionary<string, E7GuildWarRecorder.Models.Match>();
+
+                // !!! Lots of repeated code here, should refactor after
+                foreach (var match in Model.Matches)
                 {
-            <tr class="text-center">
-                <td class="col-4">
-                    <img class="hero-icon" src="@(match.Defense1 != null ? "images/icons/" + @match.Defense1.Icon : "")" />
-                    <img class="hero-icon" src="@(match.Defense2 != null ? "images/icons/" + @match.Defense2.Icon : "")" />
-                    <img class="hero-icon" src="@(match.Defense3 != null ? "images/icons/" + @match.Defense3.Icon : "")" />
-                </td>
-                <td class="col-4">
-                    <img class="hero-icon" src="@(match.Offense1 != null ? "images/icons/" + @match.Offense1.Icon : "")" />
-                    <img class="hero-icon" src="@(match.Offense2 != null ? "images/icons/" + @match.Offense2.Icon : "")" />
-                    <img class="hero-icon" src="@(match.Offense3 != null ? "images/icons/" + @match.Offense3.Icon : "")" />
-                </td>
-                <td class="col-1">
-                    @* !!! This is dumb way, change it after *@
-                    <span class="@match.Result">@char.ToUpper(match.Result.First())@match.Result.Substring(1)</span>
-                </td>
-                <td class="col-3">
-                    @(match.Notes != null ? match.Notes : "")
-                </td>
-                <td>
-                    <a asp-page="/Record/Edit" asp-route-id="@match.Id"><i class="bi-pencil-square large-icon"></i></a>
-                </td>
-            </tr>
+                    bool defense1Exists = match.Defense1 != null;
+                    bool defense2Exists = match.Defense2 != null;
+                    bool defense3Exists = match.Defense3 != null;
+
+                    bool offense1Exists = match.Offense1 != null;
+                    bool offense2Exists = match.Offense2 != null;
+                    bool offense3Exists = match.Offense3 != null;
+
+                    // Defense grouping
+                    List<string> defenseList = new List<string> { };
+
+                    if (defense1Exists)
+                    {
+                        defenseList.Add(match.Defense1.Key);
+                    }
+
+                    if (defense2Exists)
+                    {
+                        defenseList.Add(match.Defense2.Key);
+                    }
+
+                    if (defense3Exists)
+                    {
+                        defenseList.Add(match.Defense3.Key);
+                    }
+
+                    defenseList.Sort();
+                    string defenseKey = String.Join("-", defenseList.ToArray());
+
+                    // Offense grouping
+                    List<string> offenseList = new List<string> { };
+
+                    if (offense1Exists)
+                    {
+                        offenseList.Add(match.Offense1.Key);
+                    }
+
+                    if (offense2Exists)
+                    {
+                        offenseList.Add(match.Offense2.Key);
+                    }
+
+                    if (offense3Exists)
+                    {
+                        offenseList.Add(match.Offense3.Key);
+                    }
+
+                    offenseList.Sort();
+                    string offenseKey = String.Join("-", offenseList.ToArray());
+
+                    string matchKey = $"{defenseKey}-{offenseKey}";
+
+                    if (!matchLookup.ContainsKey(matchKey))
+                    {
+                        matchLookup.Add(matchKey, match);
+                    }
+
+                    if (!matchStats.ContainsKey(matchKey))
+                    {
+                        Dictionary<string, int> resultsDictionary = new Dictionary<string, int>();
+                        resultsDictionary.Add("won", 0);
+                        resultsDictionary.Add("lost", 0);
+                        resultsDictionary.Add("draw", 0);
+
+                        matchStats.Add(matchKey, resultsDictionary);
+                        matchStats[matchKey][match.Result]++;
+                    }
+                    else
+                    {
+                        matchStats[matchKey][match.Result]++;
+                    }
+                }
+
+                // !!! I suspect there is a lot of room for improvement here
+                foreach (var item in matchStats)
+                {
+                    <tr class="text-center">
+                        <td class="col-4">
+                            <img class="hero-icon" src="@(matchLookup[item.Key].Defense1 != null ? "images/icons/" + @matchLookup[item.Key].Defense1.Icon : "")" />
+                            <img class="hero-icon" src="@(matchLookup[item.Key].Defense2 != null ? "images/icons/" + @matchLookup[item.Key].Defense2.Icon : "")" />
+                            <img class="hero-icon" src="@(matchLookup[item.Key].Defense3 != null ? "images/icons/" + @matchLookup[item.Key].Defense3.Icon : "")" />
+                        </td>
+                        <td class="col-4">
+                            <img class="hero-icon" src="@(matchLookup[item.Key].Offense1 != null ? "images/icons/" + @matchLookup[item.Key].Offense1.Icon : "")" />
+                            <img class="hero-icon" src="@(matchLookup[item.Key].Offense2 != null ? "images/icons/" + @matchLookup[item.Key].Offense2.Icon : "")" />
+                            <img class="hero-icon" src="@(matchLookup[item.Key].Offense3 != null ? "images/icons/" + @matchLookup[item.Key].Offense3.Icon : "")" />
+                        </td>
+                        <td class="col-1">
+                            <span class="won">Wins: @(item.Value["won"])</span>
+                            <span class="lost">Losses: @(item.Value["lost"])</span>
+                            <span class="draw">Draws: @(item.Value["draw"])</span>
+                        </td>
+                        <td class="col-3">
+                            @(matchLookup[item.Key].Notes != null ? matchLookup[item.Key].Notes : "")
+                        </td>
+                        <td>
+                            <a asp-page="/Record/Edit" asp-route-id="@matchLookup[item.Key].Id"><i class="bi-pencil-square large-icon"></i></a>
+                        </td>
+                    </tr>
+                }
             }
         </tbody>
     </table>
