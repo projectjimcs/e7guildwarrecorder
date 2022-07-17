@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using E7GuildWarRecorder.Database;
-using E7GuildWarRecorder.Helpers;
 using E7GuildWarRecorder.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
