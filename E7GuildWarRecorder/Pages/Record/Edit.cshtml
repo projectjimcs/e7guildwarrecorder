@@ -5,6 +5,8 @@
 }
 
 <form id="add-edit-form" method="post">
+    <input hidden asp-for="Match.Id" />
+    <input hidden asp-for="Match.CreatedAt" />
     <div class="border p-3 mt-4">
         <div class="row pb-2">
             <h2 class="text-primary pl-3">Edit Match Data</h2>
