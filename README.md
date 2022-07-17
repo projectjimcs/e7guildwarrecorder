@@ -5,16 +5,16 @@ Guild war recorder for the mobile game Epic Seven. Used to record matches from p
 # Screenshots
 
 !['Preview of guild recorder dashbord'](https://user-images.githubusercontent.com/61166862/179343024-9e566caa-c9d4-4422-892f-06a26d882f2a.png)
-!['Preview of guild recorder'](https://user-images.githubusercontent.com/61166862/179383260-3faea5a5-35fb-4815-8a43-c436e00c4f3f.png)
+!['Preview of guild recorder'](https://user-images.githubusercontent.com/61166862/179428508-2c23356c-8b4a-45e2-8417-ed88ce58e7fb.png)
 !['Preview of guild recorder add'](https://user-images.githubusercontent.com/61166862/179343061-d546d608-4aaa-47dc-be5e-fa08d5853d8e.png)
 
-# Roadmap to be completed before release:
+# Roadmap to be completed before release
 
 * Show top 10 highest winrate defense in the last 30 days
 * Matches result column difficult to read with those colors. Change styling, maybe add more obvious icons.
 * Hide edit action until later date
 * Styling overall for readability across the app
-* Add pagination for matches page as it will get large pretty quickly
+* Change redirect page after adding a new match for faster creates
 
 # Acknowledgements
 

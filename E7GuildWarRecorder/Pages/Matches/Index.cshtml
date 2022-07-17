@@ -48,7 +48,7 @@
                 <th scope="col">Actions</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="matchTable">
             @{
                 Dictionary<string, Dictionary<string, int>> matchStats = new Dictionary<string, Dictionary<string, int>>();
                 // !!! There has to be a better way to do this...come back to it
@@ -160,4 +160,7 @@
             }
         </tbody>
     </table>
+    <div class="col-md-12 text-center">
+        <ul class="pagination pager" id="matchPagination"></ul>
+    </div>
 </div>
