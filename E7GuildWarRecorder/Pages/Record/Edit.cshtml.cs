@@ -34,7 +34,7 @@ namespace E7GuildWarRecorder.Pages.Record
         {
             if (ModelState.IsValid)
             {
-                await _db.Match.AddAsync(Match);
+                _db.Match.Update(Match);
                 await _db.SaveChangesAsync();
                 return RedirectToPage("/Matches/Index");
             }
