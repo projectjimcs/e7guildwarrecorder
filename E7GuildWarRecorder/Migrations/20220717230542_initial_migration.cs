@@ -246,7 +246,7 @@ namespace E7GuildWarRecorder.Migrations
                     { 152, "Magic-Scholar-Doris-icon-1.png", "magic-scholar-doris", "Magic Scholar Doris" },
                     { 153, "mascot.png", "mascot-hazel", "Mascot Hazel" },
                     { 154, "Maya-icon.png", "maya", "Maya" },
-                    { 155, "Mediator-Kawerick-icon.png", "mediator-kawerick", "Mediator Kawerick" },
+                    { 155, "Mediator-Kawerik-icon.png", "mediator-kawerik", "Mediator Kawerik" },
                     { 156, "Melany-icon.png", "melany", "Melany" },
                     { 157, "melissa-icon.jpeg", "melissa", "Melissa" },
                     { 158, "Mercedes-icon.png", "mercedes", "Mercedes" },

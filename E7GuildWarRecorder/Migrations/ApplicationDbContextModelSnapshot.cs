@@ -1123,9 +1123,9 @@ namespace E7GuildWarRecorder.Migrations
                         new
                         {
                             Id = 155,
-                            Icon = "Mediator-Kawerick-icon.png",
-                            Key = "mediator-kawerick",
-                            Name = "Mediator Kawerick"
+                            Icon = "Mediator-Kawerik-icon.png",
+                            Key = "mediator-kawerik",
+                            Name = "Mediator Kawerik"
                         },
                         new
                         {

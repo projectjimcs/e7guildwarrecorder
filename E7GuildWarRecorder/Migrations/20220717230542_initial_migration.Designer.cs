@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E7GuildWarRecorder.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220715035209_initial_migration")]
+    [Migration("20220717230542_initial_migration")]
     partial class initial_migration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -1125,9 +1125,9 @@ namespace E7GuildWarRecorder.Migrations
                         new
                         {
                             Id = 155,
-                            Icon = "Mediator-Kawerick-icon.png",
-                            Key = "mediator-kawerick",
-                            Name = "Mediator Kawerick"
+                            Icon = "Mediator-Kawerik-icon.png",
+                            Key = "mediator-kawerik",
+                            Name = "Mediator Kawerik"
                         },
                         new
                         {

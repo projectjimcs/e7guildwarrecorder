@@ -1093,9 +1093,9 @@ namespace E7GuildWarRecorder.Database.Configuration
                 new Hero
                 {
                     Id = 155,
-                    Key = "mediator-kawerick",
-                    Name = "Mediator Kawerick",
-                    Icon = "Mediator-Kawerick-icon.png"
+                    Key = "mediator-kawerik",
+                    Name = "Mediator Kawerik",
+                    Icon = "Mediator-Kawerik-icon.png"
                 },
                 new Hero
                 {
