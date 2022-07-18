@@ -4,8 +4,8 @@ Guild war recorder for the mobile game Epic Seven. Used to record matches from p
 
 # Screenshots
 
-!['Preview of guild recorder dashbord'](https://user-images.githubusercontent.com/61166862/179343024-9e566caa-c9d4-4422-892f-06a26d882f2a.png)
-!['Preview of guild recorder'](https://user-images.githubusercontent.com/61166862/179428508-2c23356c-8b4a-45e2-8417-ed88ce58e7fb.png)
+!['Preview of guild recorder dashbord'](https://user-images.githubusercontent.com/61166862/179448100-ce75176b-7cd2-4f83-8203-7f7e8beef25a.png)
+!['Preview of guild recorder'](https://user-images.githubusercontent.com/61166862/179448076-0dafd1e3-4853-4c54-9ac1-c5aadb73a474.png)
 !['Preview of guild recorder add'](https://user-images.githubusercontent.com/61166862/179343061-d546d608-4aaa-47dc-be5e-fa08d5853d8e.png)
 
 # Roadmap to be completed before release
@@ -19,3 +19,4 @@ Guild war recorder for the mobile game Epic Seven. Used to record matches from p
 # Acknowledgements
 
 Inspired by Fribbels E7 Guild War Meta Tracker: [Fribbels E7 Guild War Meta Tracker](https://fribbels.github.io/e7/gw-meta.html). Since the project is no longer maintained, I wanted to recreate my own version for my guild to reference.
+
