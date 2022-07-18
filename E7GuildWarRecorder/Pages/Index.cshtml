@@ -51,10 +51,10 @@
                         <img class="hero-icon" src="@(matchArray.Value.First().Defense3 != null ? "images/icons/" + @matchArray.Value.First().Defense3.Icon : "")" />
                     </td>
                     <td>
-                        @wonCount
+                        <span class="won"><img class="battle-status-icon" src="images/misc-icons/defense-wins.png" />@wonCount</span>
                     </td>
                     <td>
-                        @lostCount
+                        <span class="lost"><img class="battle-status-icon" src="images/misc-icons/defense-losses.png" />@lostCount</span>
                     </td>
                     <td>
                         @winRate

@@ -4,6 +4,10 @@
     height: 100px;
 }
 
+.won, .lost, .draw {
+    font-weight: bold;
+}
+
 .won {
     color: #5AAB61;
 }
@@ -13,9 +17,17 @@
 }
 
 .draw {
-    color: #FFE800;
+    color: #F7BE6D;
 }
 
 img[src=""] {
     display: none;
+}
+
+.battle-status-icon {
+    width: 40px;
+}
+
+.battle-status-icon-sm {
+    width: 30px;
 }

@@ -3,6 +3,7 @@
 
 // Write your JavaScript code.
 
+// !!! Ideally pagination is done server sided, but the current setup requires client side, probably restructure in future
 $.fn.pageMe = function (opts) {
     $this = this;
 

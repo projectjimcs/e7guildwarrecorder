@@ -38,6 +38,12 @@
             <button type="submit" class="btn btn-info">Filter</button>
         </div>
     </form>
+    <div class="alert alert-info mt-3" role="alert" style="text-align: center">
+        <strong>Legend:</strong>
+        <img class="battle-status-icon-sm" src="images/misc-icons/attack-wins.png" /> = Wins
+        <img class="battle-status-icon-sm" src="images/misc-icons/attack-losses.png" /> = Losses
+        <img class="battle-status-icon-sm" src="images/misc-icons/attack-defense-draws.png" /> = Draws
+    </div>
     <table class="table mt-4">
         <thead class="text-center">
             <tr>
@@ -145,9 +151,9 @@
                             <img class="hero-icon" src="@(matchLookup[item.Key].Offense3 != null ? "images/icons/" + @matchLookup[item.Key].Offense3.Icon : "")" />
                         </td>
                         <td class="col-1">
-                            <span class="won">Wins: @(item.Value["won"])</span>
-                            <span class="lost">Losses: @(item.Value["lost"])</span>
-                            <span class="draw">Draws: @(item.Value["draw"])</span>
+                            <span class="won"><img class="battle-status-icon" src="images/misc-icons/attack-wins.png" />@(item.Value["won"])</span>
+                            <span class="lost"><img class="battle-status-icon" src="images/misc-icons/attack-losses.png" />@(item.Value["lost"])</span>
+                            <span class="draw"><img class="battle-status-icon" src="images/misc-icons/attack-defense-draws.png" />@(item.Value["draw"])</span>
                         </td>
                         <td class="col-3">
                             @(matchLookup[item.Key].Notes != null ? matchLookup[item.Key].Notes : "")
