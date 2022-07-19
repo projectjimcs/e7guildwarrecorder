@@ -20,44 +20,22 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var matchArray in Model.MatchesByDefenseIds)
+            @foreach (var match in Model.DisplayedMatches)
             {
-                float wonCount = 0;
-                float lostCount = 0;
-                float totalMatches = 0;
-                float winRate;
-
-                // !!! Refactor later because we need to filter for the highest win rate defenses later and this won't work since calculation done front
-                foreach (var match in matchArray.Value)
-                {
-                    if (match.Result == "lost")
-                    {
-                        lostCount++;
-                    }
-                    else
-                    {
-                        wonCount++;
-                    }
-
-                    totalMatches++;
-                }
-
-                winRate = (wonCount / totalMatches) * 100;
-
                 <tr class="text-center">
                     <td>
-                        <img class="hero-icon" src="@(matchArray.Value.First().Defense1 != null ? "images/icons/" + @matchArray.Value.First().Defense1.Icon : "")" />
-                        <img class="hero-icon" src="@(matchArray.Value.First().Defense2 != null ? "images/icons/" + @matchArray.Value.First().Defense2.Icon : "")" />
-                        <img class="hero-icon" src="@(matchArray.Value.First().Defense3 != null ? "images/icons/" + @matchArray.Value.First().Defense3.Icon : "")" />
+                        <img class="hero-icon" src="@(match.Value.Defense1 != null ? "images/icons/" + @match.Value.Defense1.Icon : "")" />
+                        <img class="hero-icon" src="@(match.Value.Defense2 != null ? "images/icons/" + @match.Value.Defense2.Icon : "")" />
+                        <img class="hero-icon" src="@(match.Value.Defense3 != null ? "images/icons/" + @match.Value.Defense3.Icon : "")" />
                     </td>
                     <td>
-                        <span class="won"><img class="battle-status-icon" src="images/misc-icons/defense-wins.png" />@wonCount</span>
+                        <span class="won"><img class="battle-status-icon" src="images/misc-icons/defense-wins.png" />@(Model.MatchStatsByIds[match.Key]["won"])</span>
                     </td>
                     <td>
-                        <span class="lost"><img class="battle-status-icon" src="images/misc-icons/defense-losses.png" />@lostCount</span>
+                        <span class="lost"><img class="battle-status-icon" src="images/misc-icons/defense-losses.png" />@(Model.MatchStatsByIds[match.Key]["lost"])</span>
                     </td>
                     <td>
-                        @winRate
+                        @(Model.MatchStatsByIds[match.Key]["rate"] == 0 ? 0 : Model.MatchStatsByIds[match.Key]["rate"].ToString("#.##"))
                     </td>
                 </tr>
             }
