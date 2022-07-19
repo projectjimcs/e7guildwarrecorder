@@ -10,11 +10,12 @@ Guild war recorder for the mobile game Epic Seven. Used to record matches from p
 
 # Roadmap to be completed before release
 
-* Show top 10 highest winrate defense in the last 30 days
 * Matches result column difficult to read with those colors. Change styling, maybe add more obvious icons.
 * Hide edit action until later date
 * Styling overall for readability across the app
 * Change redirect page after adding a new match for faster creates
+* Highest win rate comps need to be checked for amount played, since matches with 1 win will always be 100%
+* Need better clarification for match creation/modification (ie. Won against defense or won against offense?)
 
 # Acknowledgements
 
