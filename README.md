@@ -16,6 +16,7 @@ Guild war recorder for the mobile game Epic Seven. Used to record matches from p
 * Change redirect page after adding a new match for faster creates
 * Highest win rate comps need to be checked for amount played, since matches with 1 win will always be 100%
 * Need better clarification for match creation/modification (ie. Won against defense or won against offense?)
+* New heroes to add: Summer Charlotte, Sharun, Sage Vivian
 
 # Acknowledgements
 
